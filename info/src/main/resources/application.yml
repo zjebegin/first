@@ -13,6 +13,17 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   main:
     allow-bean-definition-overriding: true
+  redis:
+    database: 2
+    host: localhost
+    port: 32768
+    password: 123456
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+    timeout: 100ms
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml

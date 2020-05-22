@@ -10,11 +10,14 @@
         <module name="authentication" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="13" />
+    <bytecodeTargetLevel target="13">
+      <module name="authentication" target="13" />
+      <module name="info" target="1.5" />
+      <module name="oauthMngSys" target="2.7" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="authentication" options="" />
       <module name="info" options="-parameters" />
     </option>
   </component>

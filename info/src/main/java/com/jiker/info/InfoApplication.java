@@ -7,7 +7,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 
 @SpringBootApplication
 @MapperScan("com.jiker.info.dao.mapper")
-@EnableResourceServer
+//@EnableResourceServer
 public class InfoApplication{
 
     public static void main(String[] args) {

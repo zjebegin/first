@@ -1,0 +1,37 @@
+[
+  {
+    "entity": null,
+    "children": [
+      {
+        "entity": {
+          "id": 1,
+          "url": "../demo1.html",
+          "alias": "首页"
+        },
+        "children": [
+          {
+            "entity": {
+              "id": 11,
+              "url": "../demo1.html",
+              "alias": "首页-1"
+            }
+          },
+          {
+            "entity": {
+              "id": 12,
+              "url": "../demo2.html",
+              "alias": "首页-2"
+            }
+          }
+        ]
+      },
+      {
+        "entity": {
+          "id": 2,
+          "url": "../demo2.html",
+          "alias": "查询页"
+        }
+      }
+    ]
+  }
+]

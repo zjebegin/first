@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jiker.authentication.dao.mapper.UserOrgsMapper">
-    <resultMap id="BaseResultMap" type="com.jiker.authentication.dao.domain.UserOrgs">
-        <id column="user_name" jdbcType="VARCHAR" property="userName" />
-        <result column="organization_id" jdbcType="VARCHAR" property="organizationId" />
-        <result column="user_name" jdbcType="VARCHAR" property="userName" />
-    </resultMap>
-</mapper>

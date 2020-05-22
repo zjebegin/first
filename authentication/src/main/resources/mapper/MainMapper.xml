@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiker.authentication.dao.mapper.MainMapper">
+    <resultMap id="userResultMap" type="com.jiker.authentication.dao.domain.AuthUsers">
+        <id column="user_id" jdbcType="VARCHAR" property="userId" />
+        <result column="user_name" jdbcType="VARCHAR" property="userName" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+    </resultMap>
+    <resultMap id="roleResultMap" type="com.jiker.authentication.dao.domain.AuthRoles">
+        <id column="role_id" jdbcType="VARCHAR" property="roleId" />
+        <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+        <result column="role_code" jdbcType="VARCHAR" property="roleCode" />
+        <result column="remark" jdbcType="VARCHAR" property="remark" />
+    </resultMap>
+    <resultMap id="menuResultMap" type="com.jiker.authentication.dao.domain.AuthMenu">
+        <id column="menu_id" jdbcType="VARCHAR" property="menuId" />
+        <result column="parent_id" jdbcType="VARCHAR" property="parentId" />
+        <result column="menu_id" jdbcType="VARCHAR" property="menuId" />
+        <result column="menu_name" jdbcType="VARCHAR" property="menuName" />
+        <result column="menu_url" jdbcType="VARCHAR" property="menuUrl" />
+        <result column="remark" jdbcType="VARCHAR" property="remark" />
+    </resultMap>
+    <resultMap id="loginInfoResultMap" type="com.jiker.authentication.dao.domain.LoginInfo">
+        <result column="user_name" jdbcType="VARCHAR" property="userName" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+        <result column="role_code" jdbcType="VARCHAR" property="roleCode" />
+    </resultMap>
+    <resultMap id="oauthClientDetailsResultMap" type="com.jiker.authentication.dao.domain.OauthClientDetails">
+        <id column="client_id" jdbcType="VARCHAR" property="clientId" />
+        <result column="client_id" jdbcType="VARCHAR" property="clientId" />
+        <result column="resource_ids" jdbcType="VARCHAR" property="resourceIds" />
+        <result column="client_secret" jdbcType="VARCHAR" property="clientSecret" />
+        <result column="scope" jdbcType="VARCHAR" property="scope" />
+        <result column="authorized_grant_types" jdbcType="VARCHAR" property="authorizedGrantTypes" />
+        <result column="web_server_redirect_uri" jdbcType="VARCHAR" property="webServerRedirectUri" />
+        <result column="authorities" jdbcType="VARCHAR" property="authorities" />
+        <result column="access_token_validity" jdbcType="INTEGER" property="accessTokenValidity" />
+        <result column="refresh_token_validity" jdbcType="INTEGER" property="refreshTokenValidity" />
+        <result column="additional_information" jdbcType="VARCHAR" property="additionalInformation" />
+        <result column="autoapprove" jdbcType="VARCHAR" property="autoapprove" />
+    </resultMap>
+</mapper>

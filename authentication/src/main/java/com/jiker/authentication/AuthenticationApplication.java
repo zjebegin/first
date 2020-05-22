@@ -10,12 +10,9 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @EnableResourceServer
 @EnableAuthorizationServer
 @MapperScan("com.jiker.authentication.dao.mapper")
-public class AuthenticationApplication {
+public class AuthenticationApplication{
 
     public static void main(String[] args) {
-
         SpringApplication.run(AuthenticationApplication.class, args);
     }
-
-
 }
